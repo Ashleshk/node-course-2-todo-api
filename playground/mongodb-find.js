@@ -1,11 +1,7 @@
 //const MongoClient =require('mongodb').MongoClient;
 const {MongoClient,ObjectID} = require('mongodb');
 
-// var user={name:'Ashlesh',age:21};
-// var {name} =user;
-// console.log(name);
-// var obj = new ObjectID();
-// console.log(obj);
+
 
  
 MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db)=>{
@@ -35,8 +31,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db)=>{
     // },(err)=>{
     //     console.log('Unable to fetch todos',err);
     // });
-
-    db.collection('Users').find({name:'Ashlesh'}).count().then((count)=>{
+  //the challenges for the collection
+    db.collection('Users').find({name:'Ashleshk'}).count().then((count)=>{
         console.log(`Todo count :${count}`);
         console.log(JSON.stringify(count,undefined,2));
         
